@@ -2,14 +2,13 @@ Install  guide
   
 ``` pip install mutagen ```
 
+Make sure sh script has sufficient permissions  
+`` chmod +x {path_to_folder}/zwaluw.py/runonce.sh ``
+
+Edit sh script to correct paths
+
 Execute script  
-```python3 zwaluw.py```
+``` sh runonce.sh```
 
-Playing all sounds takes about an hour
-
-30 9 * * * python3 ~/zwaluw.py/zwaluw.py  
-30 11 * * * python3 ~/zwaluw.py/zwaluw.py  
-30 13 * * * python3 ~/zwaluw.py/zwaluw.py  
-30 15 * * * python3 ~/zwaluw.py/zwaluw.py  
-0 20 * * * python3 ~/zwaluw.py/zwaluw.py  
-00 21 * * * python3 ~/zwaluw.py/zwaluw.py  
+Example cron job  
+``` * * * * * {path_to_folder}/zwaluw.py/runonce.sh```

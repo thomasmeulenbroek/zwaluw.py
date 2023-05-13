@@ -9,7 +9,7 @@ mixer.init()
 dir = str(path) + '/sounds/'
 songs = os.listdir(dir)
 index = 0
-while playing :
+while 1 :
 	print(songs)
 	for song in songs :
 		print('index ', index, songs[index])
