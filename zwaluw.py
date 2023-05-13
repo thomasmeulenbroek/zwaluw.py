@@ -20,5 +20,5 @@ while playing :
 		s = MP3(f)
 		t = s.info.length
 		print('play duration: ', t)
-		time.sleep(t + 60)
+		time.sleep(t)
 		index+=1
