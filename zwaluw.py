@@ -12,7 +12,6 @@ index = 0
 while playing :
 	print(songs)
 	for song in songs :
-		global index
 		print('index ', index, songs[index])
 		f = dir + songs[index]
 		mixer.music.load(f)
